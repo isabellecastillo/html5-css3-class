@@ -59,3 +59,63 @@ h1 {
 .left-align-text{
     text-align: left;
 }
+
+.dropdown{
+    position: relative;
+    display: block;
+}
+
+    /* CSS Shortcode - Top > Right > Bottom > Left */
+    /* padding: 10px;
+    MEANS
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    */
+
+    /* padding: 12px 16px;
+    MEANS
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+    */
+   
+    /* padding: 12px 16px 8px;
+    MEANS
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+    */
+
+      /* padding: 12px 16px 8px 24px;
+    MEANS
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 8px;
+        padding-left: 24px;
+    */
+
+    /* margin works the same way */
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px; 
+    /* min-width tells you the minimum width that the drop down menu will be */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
