@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>jQuery Lightbox</title>
+        <link rel="stylesheet" href="./assets/css/lightbox.min.css" />    
+    </head>
+
+    <body>
+        <h1>jQuery Lightbox</h1>
+
+        <a href="./assets/images/boston-terriers.jpg" data-lightbox="image-1" data-title="Boston boston-terriers">
+            <img src="./assets/images/boston-terriers-small.png">
+        </a>
+
+        <a href="./assets/images/corgi-puppy.jpg" data-lightbox="puppies">
+            <img src="./assets/images/corgi-puppy-small.jpg"/>
+          </a>
+          <a href="./assets/images/pomeranian-puppies.jpg" data-lightbox="puppies">
+            <img src="./assets/images/pomeranian-puppies-small.jpg" />
+          </a>
+          <a href="./assets/images/guinea-pig.jpg" data-lightbox="puppies">
+            <img src="./assets/images/guinea-pig-small.jpg" />
+          </a>
+        
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+
+        <script src=".assets/js/lightbox.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                console.log('jquery is working');
+            });
+        </script>
+    </body>
+
+</html>

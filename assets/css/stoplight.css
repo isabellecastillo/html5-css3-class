@@ -43,3 +43,4 @@
   /* green-light on hover should be 100% green */
   .green-light:hover{
     background-color: rgba(0, 255, 0, 1);
+  }

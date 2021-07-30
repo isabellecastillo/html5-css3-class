@@ -3,11 +3,54 @@
     <head>
         <meta charset="utf-8" />
         <title>CSS position</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .parent-box {
+                position: relative;
+                /* position: absolute; */
+                width: 100%;
+                height: auto;
+                padding: 30px;
+                background: blue
+            }
+
+            .parent-box > h1 {
+                color: white;
+            }
+
+            .child-box {
+                width: 100%;
+                height: auto;
+                padding: 30px;
+            }
+
+            .background-red {
+                background-color: red;
+            }
+            .background-yellow {
+                background-color: yellow;
+            }
+            .background-green {
+                background-color: green;
+            }
+
+            .child-one {
+                position: relative;
+                top: 15px;
+            }
+        </style>
     </head>
 
     <body>
-        <h1>template code</h1>
-        <p>sample paragraph text</p>
+        <div class="parent parent-box">
+            <h1>parent</h1>
+            <div class="child-one child-box background-red">ONE</div>
+            <div class="child-two child-box background-yellow">TWO</div>
+            <div class="child-three child-box background-green">THREE</div>
+        </div>
     </body>
 
 </html>

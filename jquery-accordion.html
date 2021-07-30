@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>jQuery accordion</title>
+
+        <style>
+            .container {
+                max-width: 500px;
+                margin: auto;
+            }
+
+            .remainder-text {
+                display:none;
+            }
+
+            .button {
+                background: transparent;
+                border:none;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>jQuery accordion</h1>
+
+        <div class="container">
+            <p class="intro">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula erat sit amet massa lobortis facilisis. Ut quis lectus vehicula, mattis sem et, molestie lectus. Nam libero tellus, euismod ut interdum at, mattis sed nisl. Suspendisse tristique pharetra nibh, sed interdum ligula aliquam non. Etiam metus tellus, aliquet at sagittis et, lacinia id velit. Fusce interdum, nulla nec vulputate lobortis, orci ipsum placerat felis, non suscipit quam tellus eu odio. Cras cursus malesuada odio, quis semper orci hendrerit eu. 
+            </p>
+
+            <p class="remainder-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula erat sit amet massa lobortis facilisis. Ut quis lectus vehicula, mattis sem et, molestie lectus. Nam libero tellus, euismod ut interdum at, mattis sed nisl. Suspendisse tristique pharetra nibh, sed interdum ligula aliquam non. Etiam metus tellus, aliquet at sagittis et, lacinia id velit. Fusce interdum, nulla nec vulputate lobortis, orci ipsum placerat felis, non suscipit quam tellus eu odio. 
+            </p>
+
+            <button type="button" class="toggle-button">show more</button>
+        </div>
+
+        <div class="container">
+            <p class="intro">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula erat sit amet massa lobortis facilisis. Ut quis lectus vehicula, mattis sem et, molestie lectus. Nam libero tellus, euismod ut interdum at, mattis sed nisl. Suspendisse tristique pharetra nibh, sed interdum ligula aliquam non. Etiam metus tellus, aliquet at sagittis et, lacinia id velit. Fusce interdum, nulla nec vulputate lobortis, orci ipsum placerat felis, non suscipit quam tellus eu odio. Cras cursus malesuada odio, quis semper orci hendrerit eu. 
+            </p>
+
+            <p class="remainder-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula erat sit amet massa lobortis facilisis. Ut quis lectus vehicula, mattis sem et, molestie lectus. Nam libero tellus, euismod ut interdum at, mattis sed nisl. Suspendisse tristique pharetra nibh, sed interdum ligula aliquam non. Etiam metus tellus, aliquet at sagittis et, lacinia id velit. Fusce interdum, nulla nec vulputate lobortis, orci ipsum placerat felis, non suscipit quam tellus eu odio. 
+            </p>
+
+            <button type="button" class="toggle-button">show more</button>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function() {
+              $('.toggle-button').on('click', function(){
+                const buttonText = $(this).text().toLowerCase();
+        
+                $(this).prev('.remainder-text').slideToggle();
+                $(this).text(buttonText === 'show more' ? 'show less' : 'show more');
+              });
+            });
+          </script>
+        
+    </body>
+
+</html>
